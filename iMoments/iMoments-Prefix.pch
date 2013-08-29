@@ -1,0 +1,74 @@
+//
+// Prefix header for all source files of the 'iMoments' target in the 'iMoments' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+////////////////////// add
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#endif
+
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#import "UIColor+HexString.h"
+#import "STCustomLabel.h"
+#import "STWriteViewController.h"
+#import "STImageSaver.h"
+#import "DataFactory.h"
+#import "iMomentsAppDelegate.h"
+
+// voice cloud
+#define VOICE_ENGINE_URL @"http://dev.voicecloud.cn/index.htm"
+#define VOICE_CLOUD_APP_ID   @"5188fcc3"
+#define VOICE_CONTROL_ORIGIN CGPointMake(20, 100)
+
+#define DEFAULT_COUNT 105
+
+//add for tag cloud
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+// Util
+#import <math.h>
+
+// Parfait
+#import "PFRadian.h"
+#import "PFPoint.h"
+#import "PFMatrix.h"
+#import "PFMatrixTransform.h"
+#endif
+//end add
+
+
+// add for map view controller
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+// add end
